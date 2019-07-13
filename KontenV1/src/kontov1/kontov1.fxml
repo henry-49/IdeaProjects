@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="kontov1.Controller">
+   <columnConstraints>
+      <ColumnConstraints />
+      <ColumnConstraints />
+      <ColumnConstraints />
+      <ColumnConstraints minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints />
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" />
+   </rowConstraints>
+   <children>
+      <Label text="Privatekonto" GridPane.rowIndex="1">
+         <padding>
+            <Insets left="5.0" />
+         </padding>
+      </Label>
+      <Label text="Geschaftskonto" GridPane.rowIndex="2">
+         <padding>
+            <Insets left="5.0" />
+         </padding>
+      </Label>
+      <TextField fx:id="txtprivatekonto" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+      <TextField fx:id="txtgeschaftskonto" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+      <Button fx:id="btnauszahlen" mnemonicParsing="false" onAction="#addAuszahlen" text="auszahlen" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+      <Button fx:id="btneinzahlen" mnemonicParsing="false" onAction="#addEinzahlen" text="einzahlen" GridPane.columnIndex="3" GridPane.rowIndex="3">
+         <GridPane.margin>
+            <Insets />
+         </GridPane.margin>
+      </Button>
+      <Label text="Gesamtsaldo" GridPane.rowIndex="4">
+         <padding>
+            <Insets left="5.0" />
+         </padding>
+      </Label>
+      <Label fx:id="lblgesamtsaldo" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+   </children>
+</GridPane>
